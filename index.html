@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Vite App</title>
   </head>
   <body>
@@ -12,23 +12,50 @@
       <h1>Getting Started with Firebase 9</h1>
 
       <h2>Firebase Firestore</h2>
-    
+
       <form class="add">
         <label for="title">Title:</label>
-        <input type="text" name="title" required>
+        <input type="text" name="title" required />
         <label for="author">Author:</label>
-        <input type="text" name="author" required>
-        
+        <input type="text" name="author" required />
+
         <button>add a new book</button>
       </form>
-    
+
       <form class="delete">
         <label for="id">Document id:</label>
-        <input type="text" name="id" required>
-    
+        <input type="text" name="id" required />
+
         <button>delete a book</button>
       </form>
+
+      <form class="update">
+        <label id="id">Document id:</label>
+        <input type="text" name="id" required />
+        <button>update a book</button>
+      </form>
     </div>
+
+    <h2>Firebase Auth</h2>
+    <form class="signup">
+      <label for="email">email:</label>
+      <input type="email" name="email" >
+      <label for="password">password:</label>
+      <input type="password" name="password">
+      <button>signup</button>
+    </form>
+
+    <form class="login">
+      <label for="email">email:</label>
+      <input type="email" name="email">
+      <label for="password">password:</label>
+      <input type="password" name="password">
+      <button>login</button>
+    </form>
+  
+    <button class="logout">logout</button>
+    <button class="unsub">unsubscribe from db/auth changes</button>
+    
     <script type="module" src="/main.js"></script>
   </body>
 </html>
